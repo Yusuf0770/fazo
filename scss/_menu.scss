@@ -1,0 +1,28 @@
+.media {
+    @include media(1226px) {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background: #fff;
+        border: 3px solid $footer-color;
+    }
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__menu-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            width: 30px;
+            height: 30px;
+            background: none;
+            border: none;
+        }
+    }
+}
