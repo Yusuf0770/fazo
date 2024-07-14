@@ -944,7 +944,7 @@ body {
 }
 
 .brands {
-  padding: 80px;
+  padding: 80px 0;
 }
 .brands__card-wrap {
   display: grid;
@@ -966,6 +966,7 @@ body {
   padding: 39px 75px;
   display: flex;
   align-items: center;
+  width: 280px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
