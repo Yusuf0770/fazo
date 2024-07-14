@@ -26,6 +26,16 @@ body {
   padding: 0 20px;
 }
 
+@media (max-width: 1040px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7568627451);
+    z-index: 20;
+  }
+}
+
 .header-top {
   margin-bottom: 31px;
   background: #ED3729;
@@ -223,9 +233,6 @@ body {
   font-weight: 600;
 }
 
-.header {
-  margin-bottom: 30px;
-}
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -383,6 +390,7 @@ body {
 }
 
 .hero {
+  margin-top: 175px;
   margin-bottom: 80px;
 }
 .hero__banner-2 {
@@ -1000,7 +1008,7 @@ body {
     bottom: 0;
     right: 0;
     width: 100%;
-    background: #e9e5e5;
+    background: rgba(241, 238, 238, 0.8588235294);
   }
 }
 .media__menu-wrap {
