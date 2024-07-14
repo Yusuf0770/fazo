@@ -1,0 +1,26 @@
+@import url(https://db.onlinewebfonts.com/c/07a38bbad54db72a40b406bed1c72f53?family=Gotham+Pro+Regular);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: "Gotham Pro Regular";
+}
+
+.container {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

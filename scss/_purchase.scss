@@ -1,0 +1,229 @@
+.purchase {
+    background: #F7F7F7;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media(840px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;   
+        }
+    }
+    &__title-wrap {
+        display: flex;
+        flex-direction: column;
+        @include media(840px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 1.2;
+        color: #202020;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #909090;
+        max-width: 418px;
+        width: 100%;
+    }
+
+    &__media-price {
+        display: none;
+        @include media(1200px) {
+            display: block;
+            margin-top: 10px;
+        }
+        @include media(840px) {
+            display: none;
+        }
+    }
+
+
+    &__price {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.2;
+        color: $pr-color;
+        margin-bottom: 17px;
+        @include media(1200px) {
+            display: none;
+        }
+    }
+
+    &__price-2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: #909090;
+        margin-bottom: 30px;
+        text-decoration: line-through;
+        @include media(1200px) {
+            display: none;
+        }
+    }
+
+    &__pricee {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.2;
+        color: $pr-color;
+        margin-bottom: 17px;
+        @include media(840px) {
+            display: none;
+        }
+    }
+
+    &__pricee-2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: #909090;
+        margin-bottom: 30px;
+        text-decoration: line-through;
+        @include media(840px) {
+            display: none;
+        }
+    }
+    &__btn {
+        padding: 12px 51px;
+        color: $pr-color;
+        border: 1px solid $pr-color;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        transition: all .3s ease;
+        &:hover {
+            background: $pr-color;
+            color: #fff;
+        }
+        @include media(840px) {
+            display: none;
+        }
+    }
+
+    &__media-img {
+        display: none;
+        @include media(1055px) {
+            display: block;
+            margin-bottom: 50px;
+            margin-top: 30px;
+        }
+        @include media(840px) {
+            display: none;
+        }
+    }
+
+    &__img {
+        @include media(1055px) {
+            display: none;
+        }
+    }
+
+
+    &__media-wrap {
+        display: none;
+        @include media(840px) {
+            display: block;
+            text-align: center;
+            margin-top: 30px;         
+            margin-bottom: 20px;
+        }
+    }
+
+    &__media-title {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 1.2;
+        color: #202020;
+        margin-bottom: 10px;
+        @include media(550px) {
+            font-size: 36px;
+        }
+
+        @include media(460px) {
+            font-size: 30px;
+        }
+        @include media(400px) {
+            font-size: 26px;
+        }
+    }
+
+    &__media-desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #909090;
+        max-width: 418px;
+        width: 100%;
+        margin-bottom: 10px;
+        @include media(550px) {
+            font-size: 12px;
+        }
+        @include media(460px) {
+            font-size: 10px;
+        }
+        // @include media(400px) {
+        //     font-size: 8px;
+        // }
+    }
+
+    &__media-info {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.2;
+        color: $pr-color;
+        margin-bottom: 17px;
+        @include media(550px) {
+            font-size: 36px;
+        }
+        @include media(460px) {
+            font-size: 30px;
+        }
+        @include media(460px) {
+            font-size: 26px;
+        }
+    }
+
+    &__media-info-2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: #909090;
+        margin-bottom: 30px;
+        text-decoration: line-through;
+        @include media(550px) {
+            font-size: 16px;
+        }
+        @include media(460px) {
+            font-size: 12px;
+        }
+        @include media(460px) {
+            font-size: 10px;
+        }
+    }
+
+    &__media-btn {
+        padding: 12px 51px;
+        color: $pr-color;
+        border: 1px solid $pr-color;
+        border-radius: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        transition: all .3s ease;
+        &:hover {
+            background: $pr-color;
+            color: #fff;
+        }
+        @include media(460px) {
+            font-size: 12px;
+        }
+    }
+}

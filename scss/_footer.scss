@@ -1,0 +1,107 @@
+.footer {
+    background: $footer-color;
+    padding-top: 64px;
+    padding-bottom: 40px;
+    .container {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        @include media(650px) {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+
+    &__info-2-wrap {
+        display: flex;
+        gap: 130px;
+        @include media(850px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: 14px;
+        max-width: 256px;
+        margin-top: 46px;
+        margin-bottom: 59px;
+        color: #fff;
+        line-height: 1.6;
+    }
+
+    &__call-center {
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    &__site-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @include media(650px) {
+            display: none;
+        }
+        img {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .3s ease;
+            padding: 5px;
+            border: 1px solid#909090;
+            &:hover {
+                background: $pr-color;
+                border: none;
+            }
+        }
+    }
+
+    &__category-wrap {
+        display: block;
+    }
+
+    &__category {
+        margin-bottom: 28px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+
+    }
+    &__lis {
+        margin-bottom: 13px;
+        color: #909090;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__site-media {
+        display: none;
+        gap: 10px;
+        @include media(650px) {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        img {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .3s ease;
+            padding: 5px;
+            border: 1px solid#909090;
+            &:hover {
+                background: $pr-color;
+                border: none;
+            }
+        }
+    }
+    
+}
