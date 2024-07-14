@@ -1,6 +1,8 @@
 .media {
+    display: none;
     @include media(1226px) {
         position: fixed;
+        display: flex;
         bottom: 0;
         right: 0;
         width: 100%;

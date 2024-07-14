@@ -1,7 +1,10 @@
 .footer {
     background: $footer-color;
     padding-top: 64px;
-    padding-bottom: 130px;
+    @include media(1226px) {
+        padding-bottom: 130px;
+
+    }
     .container {
         display: flex;
         // align-items: center;
@@ -33,6 +36,11 @@
         margin-bottom: 59px;
         color: #fff;
         line-height: 1.6;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover {
+            color: $pr-color;
+        }
     }
 
     &__call-center {
@@ -40,6 +48,11 @@
         font-size: 14px;
         color: #fff;
         margin-bottom: 10px;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover {
+            color: $pr-color;
+        }
     }
 
     &__site-wrap {
@@ -73,6 +86,11 @@
         color: #fff;
         font-weight: 600;
         font-size: 20px;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover {
+            color: $pr-color;
+        }
         @include media(650px) {
             font-size: 18px;
         }
@@ -83,6 +101,11 @@
         color: #909090;
         font-weight: 400;
         font-size: 20px;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover {
+            color: $pr-color;
+        }
         @include media(650px) {
             font-size: 18px;
         }

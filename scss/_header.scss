@@ -13,7 +13,7 @@
     width: 100%;
     max-width: 590px;
     display: flex;
-    
+
     @include media(1041px) {
       max-width: 100%;
     }
@@ -141,7 +141,6 @@
     @include media(1088px) {
       font-size: 8px;
     }
-    
   }
 
   &__menu {
@@ -158,19 +157,21 @@
 }
 
 .hero {
-  margin-top: 175px;
-    margin-bottom: 80px;
-    &__banner-2 {
-        display: none;
-        @include media(800px) {
-            display: flex;
-            object-fit: contain;
-        }
+  margin-bottom: 80px;
+  @include media(1226px) {
+    margin-top: 175px;
+  }
+  &__banner-2 {
+    display: none;
+    @include media(800px) {
+      display: flex;
+      object-fit: contain;
     }
+  }
 
-    &__banner {
-        @include media(800px) {
-            display: none;
-        }
+  &__banner {
+    @include media(800px) {
+      display: none;
     }
+  }
 }
