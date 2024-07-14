@@ -72,6 +72,9 @@
         color: #fff;
         font-weight: 600;
         font-size: 20px;
+        @include media(650px) {
+            font-size: 18px;
+        }
         
     }
     &__lis {
@@ -79,6 +82,9 @@
         color: #909090;
         font-weight: 400;
         font-size: 20px;
+        @include media(650px) {
+            font-size: 18px;
+        }
     }
 
     &__site-media {
