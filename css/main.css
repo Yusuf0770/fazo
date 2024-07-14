@@ -390,6 +390,7 @@ body {
 }
 
 .hero {
+  margin-top: 30px;
   margin-bottom: 80px;
 }
 @media (max-width: 1226px) {
