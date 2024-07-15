@@ -144,6 +144,12 @@ header {
       font-weight: 700;
     }
   }
+
+  &__tel-num {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   &__info-2-wrap {
     display: flex;
     align-items: center;

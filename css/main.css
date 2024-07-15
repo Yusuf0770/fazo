@@ -197,6 +197,11 @@ header {
 .header-top__nav ul li a:hover {
   font-weight: 700;
 }
+.header-top__tel-num {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .header-top__info-2-wrap {
   display: flex;
   align-items: center;
