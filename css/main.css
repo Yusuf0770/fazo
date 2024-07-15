@@ -26,14 +26,12 @@ body {
   padding: 0 20px;
 }
 
-@media (max-width: 1040px) {
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.7568627451);
-    z-index: 20;
-  }
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7568627451);
+  z-index: 20;
 }
 
 .header-top {
@@ -339,7 +337,7 @@ body {
 .header__nav ul {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
 }
 @media (max-width: 1226px) {
   .header__nav ul {
@@ -351,6 +349,7 @@ body {
   transition: all 0.3s ease;
   font-weight: 600;
   font-size: 14px;
+  width: 100%;
 }
 .header__nav li a:hover {
   color: #ed3729;
@@ -390,12 +389,13 @@ body {
 }
 
 .hero {
-  margin-top: 70px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-top: 250px;
 }
-@media (max-width: 1040px) {
+@media (max-width: 1226px) {
   .hero {
-    margin-top: 175px;
+    margin-top: 180px;
   }
 }
 .hero__banner-2 {

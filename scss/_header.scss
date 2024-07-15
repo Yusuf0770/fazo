@@ -115,7 +115,7 @@
   &__nav ul {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     @include media(1226px) {
       display: none;
     }
@@ -126,6 +126,7 @@
     transition: all 0.3s ease;
     font-weight: 600;
     font-size: 14px;
+    width: 100%;
     &:hover {
       color: #ed3729;
     }
@@ -157,10 +158,11 @@
 }
 
 .hero {
-  margin-top: 70px;
-  margin-bottom: 80px;
-  @include media(1040px) {
-    margin-top: 175px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-top: 250px;
+  @include media(1226px) {
+    margin-top: 180px;
   }
   &__banner-2 {
     display: none;

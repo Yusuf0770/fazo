@@ -1,12 +1,9 @@
 header {
-  @include media(1040px) {
     position: fixed;
     top: 0;
     width: 100%;
     background: #ffffffc1;
-    z-index: 20;
-  }
-  
+    z-index: 20;  
 }
 
 .header-top {
