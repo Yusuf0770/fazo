@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
   }
   &__input-wrap {
     position: relative;
@@ -83,6 +82,8 @@
 
   &__kategory-wrapper {
     display: flex;
+    position: relative;
+    padding-top: 20px;
   }
   &__kategory-wrap {
     display: flex;
@@ -160,10 +161,7 @@
 .hero {
   margin-top: 60px;
   margin-bottom: 50px;
-  margin-top: 250px;
-  @include media(1226px) {
-    margin-top: 180px;
-  }
+  margin-top: 20px;
   &__banner-2 {
     display: none;
     @include media(800px) {

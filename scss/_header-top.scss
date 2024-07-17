@@ -1,10 +1,4 @@
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #ffffffc1;
-    z-index: 20;  
-}
+
 
 .header-top {
   @include media(961px) {
@@ -178,6 +172,4 @@ header {
       font-weight: 600;
     }
   }
-
-  
 }
