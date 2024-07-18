@@ -5,6 +5,13 @@
     align-items: center;
     justify-content: space-between;
   }
+  &__btn-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
   &__top-img {
     display: flex;
     align-items: center;
@@ -23,8 +30,11 @@
     border-width: 0px, 0px, 0px, 0px;
     border-style: solid;
     border-color: #f2f2f2;
-    max-width: 360px;
     height: 100%;
+    @include media(960px) {
+      width: 100%;
+
+    }
   }
 
   &__card-top {
@@ -50,12 +60,24 @@
     padding: 14px 10px;
     border: 1px solid #e0e0e0;
     margin-bottom: 10px;
+    @include media(405px) {
+      font-size: 10px;
+    }
   }
   &__card-input {
     accent-color: red;
     width: 300px;
     margin-bottom: 30px;
     cursor: pointer;
+    @include media(960px) {
+      width: 100%;
+    }
+    // @include media(434px) {
+    //   width: 250px;
+    // }
+    // @include media(381px) {
+    //   width: 200px;
+    // }
   }
   &__card-select {
     font-weight: 400;
@@ -128,25 +150,46 @@
   &__card-wrap-2 {
     display: flex;
     margin-bottom: 60px;
+    @include media(960px) {
+      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__card-wrap-4 {
     display: flex;
-    gap: 40px;
+    gap: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    @include media(1300px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include media(1060px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media(960px) {
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 30px;
+    }
+    @include media(730px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media(500px) {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
   }
   &__card-2 {
-        position: relative;
-        padding: 10px 12px 20px 12px;
-        border: 2px solid #F2F2F2;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        cursor: pointer;
-        width: 260px;
-        transition: all .3s ease;
-        &:hover {
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
-        }
+    position: relative;
+    padding: 10px 5px 10px 5px;
+    border: 2px solid #f2f2f2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
   }
 
   &__info-btn {
@@ -156,19 +199,18 @@
     border-radius: 5px;
     font-weight: 400;
     font-size: 16px;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateX(170%);
     cursor: pointer;
     background: #fff;
     &:hover {
-        background: $pr-color;
-        color: #fff;
+      background: $pr-color;
+      color: #fff;
     }
     @include media(460px) {
-        font-size: 12px;
+      font-size: 12px;
     }
   }
 }

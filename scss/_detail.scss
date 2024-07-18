@@ -1,0 +1,19 @@
+.detail {
+    &__price-wrap {
+        display: flex;
+    }
+    button svg {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        fill: #c1bcbc;
+        :hover {
+            fill: #ED3729;
+        }
+    }
+    &__info-cart {
+        svg path {
+            fill: #fff;
+        }
+    }
+}

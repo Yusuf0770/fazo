@@ -2,9 +2,17 @@
     .container {
         text-align: center;
     }
-    &__cart-like-wrap svg path:hover {
-        fill: red;
-        background: red;
+    &__cart-like-wrap {
+        button svg {
+            width: 22px;
+            height: 22px;
+            transition: all .2s ease;
+            cursor: pointer;
+            fill: #c8c6c6;
+            :hover {
+                fill: #ED3729;
+            }
+        }
     }
 
     &__cart-like-wrap svg {
